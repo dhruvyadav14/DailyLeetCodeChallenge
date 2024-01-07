@@ -1,3 +1,6 @@
+import bisect
+
+
 class Solution:
     """
     The dumb and inefficient solution is to do nested for loops and find the longest subsequence for each starting index
@@ -8,12 +11,14 @@ class Solution:
     if so, increase output. if not....nvm. this algorithm doesnt work. lets just do the dumb solution first
     """
 
-    def lengthOfLIS(self, nums: List[int]) -> int:
+    # def lengthOfLIS(self, nums: List[int]) -> int:
         
-        dp=[1]*len(nums)
-        for i in range(len(nums)):
-            for j in range(i):
-                if nums[i]>nums[j]:
-                    dp[i]=max(dp[j]+1,dp[i])
+    #     dp=[1]*len(nums)
+    #     for i in range(len(nums)):
+    #         for j in range(i):
+    #             if nums[i]>nums[j]:
+    #                 dp[i]=max(dp[j]+1,dp[i])
 
-        return max(dp)
+    #     return max(dp)
+    i= bisect.bisect([[0, 0], [3, 20]], [-1])
+    print(i)
