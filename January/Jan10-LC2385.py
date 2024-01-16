@@ -1,9 +1,9 @@
 # Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
 
         # we know this is a binary tree. at most, only 3 nodes can get infected all at once. 
         # this is basically a height problem
@@ -15,6 +15,9 @@
 
         # if start is a leaf node:::
         # it is height of left + right - 2
+
+from typing import Optional
+
 
 class Solution:
 

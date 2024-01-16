@@ -1,3 +1,6 @@
+from collections import defaultdict
+
+
 class Solution:
     def numberOfArithmeticSlices(self, nums: List[int]) -> int:
         # n^2 solution - go through each element's subsequent numbers
